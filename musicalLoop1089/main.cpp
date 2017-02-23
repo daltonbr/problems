@@ -32,24 +32,10 @@
  */
 
 #include <iostream>
-//#include <string>
 using namespace std;
 
-int main(int argc, const char * argv[])
+int main()
 {
-    //freopen("input.dat", "r", stdin); // redirects standard input
-    //freopen("output.dat", "w", stdout); // redirects standard output
-    
-    if(freopen("input.dat", "r", stdin))
-    {
-        cout << "input.dat open to read data\n";
-    }
-    else
-    {
-        cout << "ERROR: input.dat can't be opened or unexist!\n";
-        return -1;
-    }
-    
     int numberSample, peakCount = 1;
     
     int firstSample, secondSample, sample, lookAheadSample;
@@ -60,9 +46,8 @@ int main(int argc, const char * argv[])
     while (numberSample != 0)
     {
         peakCount = 0;
-        //cout << "\n";
-        
-        //trivial case, just 1 sample
+
+        //trivial case - not need because numberSample > 2
         while (numberSample == 1)
         {
             cin >> sample; //just reading the unique sample
@@ -71,11 +56,9 @@ int main(int argc, const char * argv[])
             cin >> numberSample; //reading the next numberSample
             peakCount = 0;
             if (numberSample == 0) {return 0;}
-            cout << "\n";
         }
         
-        //at this point, we have at least 2 or more samples
-        
+        //at this point, we have at least 2 or more samples        
         //save the first and the second sample to compare later with the last one
         cin >> sample;
         firstSample = sample;
@@ -85,10 +68,8 @@ int main(int argc, const char * argv[])
         
         goingUp = lookAheadSample > sample;
         
-        
         for (int i = 1; i < numberSample; i++)
-        {
-            
+        {    
             //move to the next pair of samples
             sample = lookAheadSample;
             
@@ -114,10 +95,9 @@ int main(int argc, const char * argv[])
         
         goingUpAgain = lookAheadSample > sample;
         
-        // if the last two directions diverge, we have a peak
         if (goingUp != goingUpAgain) {peakCount++;}
         
-        cout << /*"peaks: " << */peakCount;
+        cout << /*"peaks: " << */peakCount << "\n";
         cin >> numberSample;
     }
     return 0;
