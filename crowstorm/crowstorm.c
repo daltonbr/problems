@@ -41,7 +41,10 @@ Input Sample            	Output Sample
 */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>           // sqrt()
+
+// auxiliary function declaration
+float magnitude(int x, int y);
 
 void main ()
 {
@@ -52,8 +55,13 @@ void main ()
     int R1, R2;              // casting and "action" radius of the Ultimate
 
     int difX, difY;          // Vector of the difference of positions between the players
-    int finalX, FinalY;      // Vector of the final position of the enemy player
-
+    float finalX, finalY;      // Vector of the final position of the enemy player
+    int totalRange;          // R1 + R2 ; the maximum radius that the Ultimate can reach
+    
+    float magnitudeDif;
+    float normalizedDifX, normalizedDifY;
+    float finalDistanceBetweenPlayersX, finalDistanceBetweenPlayersY, finalDistanceBetweenPlayersMag;
+    
     while (scanf("%d", &Xf) == 1)
     {
         scanf("%d", &Yf);
@@ -63,15 +71,53 @@ void main ()
         scanf("%d", &R1);
         scanf("%d", &R2);
 
+        // Calculating totalRange (since we are on a straight line)
+        totalRange = R1 + R2;
+
         // Calculating the difference Vector (difX, difY) at the instant of the cast of the Ultimate,
         // for the fleing direction (opposite direction)
         difX = Xi - Xf;
         difY = Yi - Yf;
+        
+        // Normalizing this last vector
+        magnitudeDif = magnitude(difX, difY);
+        //printf("[Debug] Vector difference: ( %.d , %d ) Magnitude: %.3f \n", difX, difY, magnitudeDif);
+
+        normalizedDifX = difX/magnitudeDif;
+        normalizedDifY = difY/magnitudeDif;
 
         // Note: SPEED is a SCALAR and VELOCITY is a VECTOR unit
         // Assuming the enemy will flee at constant speed and direction (our vector difference above)
         // Let's determine the future position of the enemy when the Ultimate is ready to cast (after the castTime 1.5f)
 
+        finalX = Xi + (normalizedDifX * castTime * Vi);
+        finalY = Yi + (normalizedDifY * castTime * Vi);
+        //printf("[Debug] Enemy Final Position: ( %.3f , %.3f ) \n", finalX, finalY);
 
-    }
+        // Remember that it's possible to overshoot our target!
+        
+        // Let's find if the enemy is inside the Ultimate action radius (our totalRange)
+        finalDistanceBetweenPlayersX = finalX - Xf;
+        finalDistanceBetweenPlayersY = finalY - Yf;
+        
+        // Magnitude of the distance between the players
+        finalDistanceBetweenPlayersMag = magnitude(finalDistanceBetweenPlayersX, finalDistanceBetweenPlayersY);
+        //printf("[Debug] Final Distance Between Players: %.3f \n", finalDistanceBetweenPlayersMag);
+        //printf("[Debug] Total Cast Range: %d \n", totalRange);
+
+        if (finalDistanceBetweenPlayersMag <= totalRange)
+        {
+            printf("Y\n");  // Yes! Hit the enemy!
+        }
+        else
+        {
+            printf("N\n");  // No! Miss the enemy!
+        }
+    }   // While closing
+
+}
+
+float magnitude(int x, int y)
+{
+    return sqrt(x*x + y*y);
 }
