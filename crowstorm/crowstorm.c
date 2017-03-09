@@ -44,9 +44,9 @@ Input Sample            	Output Sample
 #include <math.h>           // sqrt()
 
 // auxiliary function declaration
-float magnitude(int x, int y);
+float magnitude(float x, float y);
 
-void main ()
+int main ()
 {
 
     const float castTime = 1.5f;
@@ -114,10 +114,10 @@ void main ()
             printf("N\n");  // No! Miss the enemy!
         }
     }   // While closing
-
+return 0;
 }
 
-float magnitude(int x, int y)
+float magnitude(float x, float y)
 {
     return sqrt(x*x + y*y);
 }
