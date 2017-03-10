@@ -43,15 +43,13 @@ Input Sample            	Output Sample
 #include <stdio.h>
 #include <math.h>           // sqrt()
 
-// auxiliary function declaration
-// float magnitude(float x, float y);
-
 typedef struct Vector2
 {
     float x;
     float y;
 } Vector2;
 
+// Function declarations
 Vector2 sum(Vector2 firstVector, Vector2 secondVector);
 Vector2 multiplicationByScalar(Vector2 vector, float scalar);
 Vector2 inverse(Vector2 vector);
@@ -63,21 +61,19 @@ int main ()
 {
 
     const float castTime = 1.5f;
-    Vector2 heroPosition;           // (Xf, Yf)
-    float Vi;                        // Enemy speed (constant) - also could be modelled as a Vector2
+    Vector2 heroPosition;            // (Xf, Yf)
     Vector2 enemyInitialPosition;    // Invader/enemy initial position;
-    int R1, R2;                     // casting and "action" radius of the Ultimate
-
-    Vector2 difference;             // Vector of the difference of positions between the players
-    Vector2 enemyFinalPosition;     // Vector of the difference of positions between the players
-    int totalRange;                 // R1 + R2 ; the maximum radius that the Ultimate can reach
-    
-    float differenceMag;            
-    Vector2 normalizedDifference;
+    Vector2 difference;              // Vector of the difference of positions between the players
+    Vector2 enemyFinalPosition;      // Vector of the difference of positions between the players
     Vector2 finalDifference;
+    Vector2 normalizedDifference;
     Vector2 enemyDisplacement;
+    float totalRange;                // R1 + R2 ; the maximum radius that the Ultimate can reach
+    float differenceMag;            
     float finalDifferenceMag;       
-        
+    float Vi;                        // Enemy speed (constant) - also could be modelled as a Vector2
+    float R1, R2;                    // casting and "action" radius of the Ultimate
+
     while (scanf("%f", &heroPosition.x) == 1)
     {
         scanf("%f", &heroPosition.y);
@@ -87,8 +83,8 @@ int main ()
         scanf("%f", &R1);
         scanf("%f", &R2);
 
-        printf("[DEBUG]Hero Initial Position: "); printVector(heroPosition);
-        printf("[DEBUG]Enemy Initial Position: "); printVector(heroPosition);
+        printf("[DEBUG] Hero Initial Position: "); printVector(heroPosition);
+        printf("[DEBUG] Enemy Initial Position: "); printVector(enemyInitialPosition);
 
         // Calculating totalRange (since we are on a straight line)
         totalRange = R1 + R2;
@@ -97,10 +93,10 @@ int main ()
         // for the fleing direction (opposite direction)
         
         difference = sum(enemyInitialPosition, inverse(heroPosition));
-        printf("[DEBUG]Initial Difference: "); printVector(difference);
+        printf("[DEBUG] Initial Difference: "); printVector(difference);
 
         // Normalizing this last vector - just for Debug
-        printf("[DEBUG]Normalized Difference: "); printVector(normalized(difference));
+        printf("[DEBUG] Normalized Difference: "); printVector(normalized(difference));
 
         // Note: SPEED is a SCALAR and VELOCITY is a VECTOR unit
         // Assuming the enemy will flee at constant speed and direction (our vector difference above)
@@ -108,7 +104,7 @@ int main ()
 
         enemyDisplacement = multiplicationByScalar(normalized(difference), castTime * Vi);
         enemyFinalPosition = sum(enemyInitialPosition, enemyDisplacement);
-        printf("[DEBUG]Enemy Final Position: "); printVector(enemyFinalPosition);
+        printf("[DEBUG] Enemy Final Position: "); printVector(enemyFinalPosition);
         
         // Remember that it's possible to overshoot our target!
         
@@ -119,7 +115,7 @@ int main ()
         
         // Magnitude of the distance between the players
         printf("[Debug] Final Distance Between Players: %.3f \n", finalDifferenceMag);
-        printf("[Debug] Total Cast Range: %d \n", totalRange);
+        printf("[Debug] Total Cast Range: %f \n", totalRange);
 
         if (finalDifferenceMag <= totalRange)
         {

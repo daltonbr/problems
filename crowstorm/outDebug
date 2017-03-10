@@ -1,0 +1,48 @@
+[DEBUG] Hero Initial Position: (4.000, 6.000)
+[DEBUG] Enemy Initial Position: (22.000, 6.000)
+[DEBUG] Initial Difference: (18.000, 0.000)
+[DEBUG] Normalized Difference: (1.000, 0.000)
+[DEBUG] Enemy Final Position: (22.000, 6.000)
+[Debug] Final Distance Between Players: 18.000 
+[Debug] Total Cast Range: 18.000000 
+Y
+[DEBUG] Hero Initial Position: (4.000, 6.000)
+[DEBUG] Enemy Initial Position: (22.000, 6.000)
+[DEBUG] Initial Difference: (18.000, 0.000)
+[DEBUG] Normalized Difference: (1.000, 0.000)
+[DEBUG] Enemy Final Position: (23.500, 6.000)
+[Debug] Final Distance Between Players: 19.500 
+[Debug] Total Cast Range: 18.000000 
+N
+[DEBUG] Hero Initial Position: (0.000, 0.000)
+[DEBUG] Enemy Initial Position: (8.000, 2.000)
+[DEBUG] Initial Difference: (8.000, 2.000)
+[DEBUG] Normalized Difference: (0.970, 0.243)
+[DEBUG] Enemy Final Position: (10.910, 2.728)
+[Debug] Final Distance Between Players: 11.246 
+[Debug] Total Cast Range: 11.000000 
+N
+[DEBUG] Hero Initial Position: (0.000, 0.000)
+[DEBUG] Enemy Initial Position: (8.000, 2.000)
+[DEBUG] Initial Difference: (8.000, 2.000)
+[DEBUG] Normalized Difference: (0.970, 0.243)
+[DEBUG] Enemy Final Position: (10.910, 2.728)
+[Debug] Final Distance Between Players: 11.246 
+[Debug] Total Cast Range: 13.000000 
+Y
+[DEBUG] Hero Initial Position: (0.000, 0.000)
+[DEBUG] Enemy Initial Position: (8.000, 2.000)
+[DEBUG] Initial Difference: (8.000, 2.000)
+[DEBUG] Normalized Difference: (0.970, 0.243)
+[DEBUG] Enemy Final Position: (15.276, 3.819)
+[Debug] Final Distance Between Players: 15.746 
+[Debug] Total Cast Range: 16.000000 
+Y
+[DEBUG] Hero Initial Position: (0.000, 0.000)
+[DEBUG] Enemy Initial Position: (8.000, 2.000)
+[DEBUG] Initial Difference: (8.000, 2.000)
+[DEBUG] Normalized Difference: (0.970, 0.243)
+[DEBUG] Enemy Final Position: (15.276, 3.819)
+[Debug] Final Distance Between Players: 15.746 
+[Debug] Total Cast Range: 14.000000 
+N
