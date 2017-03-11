@@ -94,7 +94,9 @@ int main()
         // Note: SPEED is a SCALAR and VELOCITY is a VECTOR unit
         // Assuming the enemy will flee at constant speed and direction (our vector difference above)
         // Let's determine the future position of the enemy when the Ultimate is ready to cast (after the castTime 1.5f)
-        enemyDisplacement = multiplicationByScalar(normalized(difference), castTime * Vi);
+
+        normalizedDifference = normalized(difference);
+        enemyDisplacement = multiplicationByScalar(normalizedDifference, castTime * Vi);
         enemyFinalPosition = sum(enemyInitialPosition, enemyDisplacement);
 
         // Remember that it's possible to overshoot our target!
@@ -111,6 +113,26 @@ int main()
             printf("[DEBUG] Enemy Final Position: "); printVector(enemyFinalPosition);
             printf("[Debug] Final Distance Between Players: %.3f \n", finalDifferenceMag);
             printf("[Debug] Total Cast Range: %f \n", totalRange);
+        }
+
+        // POLEMIC SPECIAL CASE! Test input: 0 0 0 0 1 0 0 (Vi != 0)
+        // (mathematically I think there is a minor conceptual mistake in the description of 
+        // this problem and the expected output in this particular case)
+        // When the enemy and the hero starts at the SAME Position, we DON'T have an AWAY direction
+        // so in Theory the enemy shouldn't flee at all. 
+        // As sugestion, we can agree that in this case they will flee to any direction (but the description doesn't say that)
+        // Creating a special check for this...
+        if (normalizedDifference.x == 0.0f && normalizedDifference.x == 0.0f)
+        {
+            if(Vi * castTime > totalRange)
+            {
+                printf("N\n");      // No! Miss the enemy!
+            }
+            else
+            {
+                printf("Y\n");      // Yes! Hit the enemy!
+            }
+            continue;               // go to the next WHILE iteration
         }
 
         if (finalDifferenceMag <= totalRange)
@@ -174,6 +196,12 @@ Vector2 normalized(Vector2 vector)
     Vector2 outputVector;
     float mag;
     mag = magnitude(vector);
+    if (mag == 0)
+    {   // Returning a null vector
+        outputVector.x = .0f;
+        outputVector.y = .0f;
+        return outputVector;
+    }
     outputVector.x = vector.x / mag;
     outputVector.y = vector.y / mag;
     return outputVector;
