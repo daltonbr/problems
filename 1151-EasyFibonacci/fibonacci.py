@@ -6,7 +6,14 @@ import sys
 
 user_input = input()
 
-total_terms = int(user_input)
+# Grab user's input
+try:
+	total_terms = int(user_input)
+except ValueError as error:
+	print("Input must be an integer!")
+	print(error)
+	sys.exit()
+
 term = 0
 next_term = 1
 
