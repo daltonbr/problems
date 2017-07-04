@@ -3,3 +3,6 @@
 *.obj
 *.o
 .vscode/
+
+# PyCharm IDE (and probably other JetBrainz's IDe's)
+.idea/*
