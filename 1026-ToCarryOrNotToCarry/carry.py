@@ -1,3 +1,8 @@
+# Problem #1026
+# Author: Dalton Lima @daltonbr
+# 07/04/17
+# https://www.urionlinejudge.com.br/judge/en/problems/view/1026
+
 import fileinput
 
 for line in fileinput.input():
