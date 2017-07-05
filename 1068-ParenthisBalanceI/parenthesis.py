@@ -5,9 +5,6 @@
 
 import fileinput
 
-# for line in fileinput.input():
-
-
 class Stack:
     def __init__(self):
         self.items = []
@@ -27,19 +24,31 @@ class Stack:
     def size(self):
         return len(self.items)
 
-my_stack = Stack()
 
-a_string="abcd(abc(lkj)"
-for letter in a_string:
-    if letter == '(':
-        print("Opening")
-        my_stack.push(letter)
-    if letter == ')':
-        print("Closing")
-        my_stack.pop()
-        # if pop failed -> 'incorrect'
 
-if my_stack.is_empty():
-    print('correct')
-else:
-    print('incorrect')
+def check_parenthesis(line):
+    line = line.strip('\n')
+    my_stack = Stack()
+
+    for character in line:
+        if character == '(':
+            # print("--Opening--")
+            my_stack.push(character)
+        if character == ')':
+            # print("--Closing--")
+            try:
+                my_stack.pop()
+            except IndexError as error:
+                # print(error, " - Sintax error: There are more ')' than '('")
+                print('incorrect')
+                return
+
+    # we finish reading the string
+    if my_stack.is_empty():
+        print('correct')
+    else:
+        print('incorrect')
+
+# main
+for line in fileinput.input():
+    check_parenthesis(line)
