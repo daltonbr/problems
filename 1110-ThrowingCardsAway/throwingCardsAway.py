@@ -29,8 +29,7 @@ for line in sys.stdin:
     if (deck_size != 0):
         discarded = []
         initial_deck = list(range(1, deck_size+1))
-        print (initial_deck, sep=', ')
-
+        
         while (len(initial_deck) > 1):
             # throw away the head (the first element in the list)
             discarded.append(initial_deck.pop(0))
@@ -40,13 +39,11 @@ for line in sys.stdin:
             if (len(initial_deck) > 1):
                 # move the new head through the end (bottom) of the list
                 poped = initial_deck.pop(0)
-        #           print (initial_deck, sep=', ')    
                 initial_deck.append(poped)
-        #           print (initial_deck, sep=', ')
         
-        print("Discarded cards:", sep=", ")
-        print(discarded, sep=", ")
-        print("Remaining card:")
-        print(initial_deck[0])    
+        print("Discarded cards: ", end="")
+        print(*discarded, sep=', ')
+                
+        print("Remaining card:", initial_deck[0]) 
     else:     
         sys.exit()
