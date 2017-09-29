@@ -12,5 +12,6 @@ I use this problems as a playground to use different languages and exercise some
 - 1110 - (Lists and Queue) #Python3
 - 1124 - Elevator
 - 1151 - Easy Fibonacci
+- 1259 - Even and Odd (C#) #WIP #TLE
 - 1410 - He is offside
 - 2203 - Crowstorm
