@@ -7,6 +7,7 @@ I use this problems as a playground to use different languages and exercise some
 - 1005 - Average 1 #Python3
 - 1017 - Fuel Spent
 - 1026 - To Carry or Not To Carry
+- 1059 - Even Numbers
 - 1068 - Parenthesis Balance I - (Stack) #Python3
 - 1089 - Musical Loop
 - 1110 - (Lists and Queue) #Python3
