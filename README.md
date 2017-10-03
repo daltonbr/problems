@@ -1,16 +1,18 @@
-# uri
-A repo for general problems and **computational challenges** from www.urionlinejudge.com.br
-I use this problems as a playground to use different languages and exercise some basic concepts that all programmers must know!
+# URI
 
-### Problems Solved:
+A repo for coding problems and **computational challenges** from www.urionlinejudge.com.br
+This is my playground to play with different languages and exercise some basic concepts that all programmers must know!
 
-- 1005 - Average 1 #Python3
+## Problems Solved
+
+- 1005 - Average 1 #python3
 - 1017 - Fuel Spent
+- 1024 - Encryption (string manipulations) #python3
 - 1026 - To Carry or Not To Carry
-- 1059 - Even Numbers
-- 1068 - Parenthesis Balance I - (Stack) #Python3
+- 1059 - Even Numbers #python3
+- 1068 - Parenthesis Balance I - (Stack) #python3
 - 1089 - Musical Loop
-- 1110 - (Lists and Queue) #Python3
+- 1110 - Lists and Queue #python3
 - 1124 - Elevator
 - 1151 - Easy Fibonacci
 - 1259 - Even and Odd (C#) #WIP #TLE
