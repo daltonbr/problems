@@ -1,7 +1,7 @@
 # URI
 
-A repo for coding problems and **computational challenges** from www.urionlinejudge.com.br
-This is my playground to play with different languages and exercise some basic concepts that all programmers must know!
+A repo for coding problems and **computational challenges** from www.urionlinejudge.com.br  
+This is my playground to play with different languages and exercise concepts!
 
 ## Problems Solved
 
