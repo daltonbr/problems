@@ -15,6 +15,6 @@ This is my playground to play with different languages and exercise concepts!
 - 1110 - Lists and Queue #python3
 - 1124 - Elevator
 - 1151 - Easy Fibonacci
-- 1259 - Even and Odd (C#) #WIP #TLE
+- 1259 - Even and Odd (C#) (2nd version optimized)
 - 1410 - He is offside
 - 2203 - Crowstorm
