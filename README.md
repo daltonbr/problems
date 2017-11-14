@@ -6,6 +6,7 @@ I use this problems as a playground to use different languages and exercise some
 - 1017
 - 1026
 - 1068 - Parenthesis Balance I - (Stack) #Python3
+- 1087 - Queen - #Ruby
 - 1089
 - 1110 - (Lists and Queue) #Python3
 - 1151
