@@ -1,10 +1,10 @@
 # Problem Solving
 
-A repo for coding problems and **computational challenges** from several site like [URI](www.urionlinejudge.com.br), [HackerRank.com](www.hackerrank.com) and [TopCoder.com].
+A repo for coding problems and **computational challenges** from several site like [URI](www.urionlinejudge.com.br), [HackerRank.com](www.hackerrank.com) and [TopCoder](www.topcoder.com).
 
-This is my playground to play with different languages and exercise concepts!
+This is my playground to pratice languages and exercise concepts!
 
-I am doing now a [30 Days of Code](./30DaysOfCode/30DaysOfCode.md) challenge!  
+I am doing now a [30 Days of Code](./_30DaysOfCode/30DaysOfCode.md) challenge!  
 
 ## [URI](www.urionlinejudge.com.br) Problems
 
@@ -23,6 +23,6 @@ I am doing now a [30 Days of Code](./30DaysOfCode/30DaysOfCode.md) challenge!
 - 1410 - He is offside
 - 2203 - Crowstorm
 
-## [Top Coder Problems](./TopCoder/TopCoder.md)
+## [Top Coder Problems](www.topcoder.com)
 
 - Advertising Agency
