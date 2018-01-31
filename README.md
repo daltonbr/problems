@@ -1,12 +1,12 @@
 # Problem Solving
 
-A repo for coding problems and **computational challenges** from several site like [URI](www.urionlinejudge.com.br), [HackerRank.com](www.hackerrank.com) and others.
+A repo for coding problems and **computational challenges** from several site like [URI](www.urionlinejudge.com.br), [HackerRank.com](www.hackerrank.com) and [TopCoder.com].
 
 This is my playground to play with different languages and exercise concepts!
 
 I am doing now a [30 Days of Code](./30DaysOfCode/30DaysOfCode.md) challenge!  
 
-## [URI](www.urionlinejudge.com.br) Problems Solved
+## [URI](www.urionlinejudge.com.br) Problems
 
 - 1005 - Average 1 #python3
 - 1017 - Fuel Spent
@@ -22,3 +22,7 @@ I am doing now a [30 Days of Code](./30DaysOfCode/30DaysOfCode.md) challenge!
 - 1259 - Even and Odd (C#) (2nd version optimized)
 - 1410 - He is offside
 - 2203 - Crowstorm
+
+## [Top Coder Problems](./TopCoder/TopCoder.md)
+
+- Advertising Agency
