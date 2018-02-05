@@ -13,7 +13,6 @@ vector<int> parseInts(string str)
     stringstream ss(str);
     char ch;
     
-    int counter = 0;
     do
     {
         int tempInt;
