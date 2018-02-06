@@ -11,4 +11,15 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 4 - Class vs. Instance
 - [x] Day 5 - Loops
 - [x] Day 6 - Let's Review
-- [ ] Day 7 - 
+- [x] Day 7 - Arrays
+- [ ] Day 8 - Dictionaries and Maps
+- [ ] Day 9 - Recursion
+- [ ] Day 10 - Binary Numbers
+- [ ] Day 11 - 2D Arrays
+- [ ] Day 12 - Inheritance
+- [ ] Day 13 - Abstract Classes
+- [ ] Day 14 - Scope
+- [ ] Day 15 - Linked List
+- [ ] Day 16 - Exceptions - String to Integer
+- [ ] Day 17 - More Exceptions
+- [ ] Day 18 - Queues and Stacks
