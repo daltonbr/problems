@@ -2,7 +2,7 @@
 
 A repo for coding problems and **computational challenges** from several site like [URI](www.urionlinejudge.com.br), [HackerRank.com](www.hackerrank.com) and [TopCoder](www.topcoder.com).
 
-This is my playground to pratice languages and exercise concepts!
+This is my playground to practice languages and exercise concepts!
 
 I am doing now a [30 Days of Code](./_30DaysOfCode/30DaysOfCode.md) challenge!  
 
