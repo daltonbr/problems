@@ -2,6 +2,7 @@
 *.out
 *.obj
 *.o
+*.dat
 .vscode/
 
 # PyCharm IDE (and probably other JetBrainz's IDe's)
