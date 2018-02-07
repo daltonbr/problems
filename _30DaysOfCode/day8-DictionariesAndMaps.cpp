@@ -8,9 +8,7 @@ https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem
 #include <unordered_map>
 using namespace std;
 
-
-int main()
-{
+int main() {
     int n; cin >> n;
     std::unordered_map<string, string> phoneBook;
 
