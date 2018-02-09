@@ -1,5 +1,6 @@
 # 30 Days of Code
 
+Although these daily challenges are fairly easy, they are a good review of basic concepts.
 This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-code) from [HackerRank.com](www.hackerrank.com).
 
 ## Started January 30rd, 2018
@@ -12,9 +13,9 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 5 - Loops
 - [x] Day 6 - Let's Review
 - [x] Day 7 - Arrays
-- [ ] Day 8 - Dictionaries and Maps
-- [ ] Day 9 - Recursion
-- [ ] Day 10 - Binary Numbers
+- [x] Day 8 - Dictionaries and Maps
+- [x] Day 9 - Recursion
+- [x] Day 10 - Binary Numbers
 - [ ] Day 11 - 2D Arrays
 - [ ] Day 12 - Inheritance
 - [ ] Day 13 - Abstract Classes
