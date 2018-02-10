@@ -33,6 +33,10 @@ int main()
                 lastWasOne = false;
             }            
         }
+        else
+        {
+            lastWasOne = false;
+        }
     }
     
     cout << min << " " << max << endl;
