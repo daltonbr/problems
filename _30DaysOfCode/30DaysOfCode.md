@@ -16,7 +16,7 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 8 - Dictionaries and Maps
 - [x] Day 9 - Recursion
 - [x] Day 10 - Binary Numbers
-- [ ] Day 11 - 2D Arrays
+- [x] Day 11 - 2D Arrays
 - [ ] Day 12 - Inheritance
 - [ ] Day 13 - Abstract Classes
 - [ ] Day 14 - Scope
