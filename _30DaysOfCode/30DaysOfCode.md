@@ -20,7 +20,7 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 12 - Inheritance
 - [x] Day 13 - Abstract Classes
 - [x] Day 14 - Scope
-- [ ] Day 15 - Linked List
+- [x] Day 15 - Linked List
 - [ ] Day 16 - Exceptions - String to Integer
 - [ ] Day 17 - More Exceptions
 - [ ] Day 18 - Queues and Stacks
