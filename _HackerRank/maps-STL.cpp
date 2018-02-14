@@ -14,7 +14,7 @@ int main()
     std::map<string, int> myMap;
 
     int q, queryType;
-     cin >> q;
+    cin >> q;
 
     while (q--)
     {
