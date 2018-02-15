@@ -1,11 +1,4 @@
 /*
-Linked Lists: Detect a Cycle
-https://www.hackerrank.com/challenges/ctci-linked-list-cycle/problem
-
-This is NOT A STANDALONE TEST
-Our hidden code checker passes the appropriate argument to your function.
-You are not responsible for reading any input from stdin.
-
 Detect a cycle in a linked list. Note that the head pointer may be 'NULL' if the list is empty.
 
 A Node is defined as: 
@@ -15,8 +8,25 @@ A Node is defined as:
     }
 */
 
+#include<bits/stdc++.h>
+
 bool has_cycle(Node* head)
 {
-    // Complete this function
-    // Do not write the main method
+    std::unordered_set<Node*> nodesVisited;
+    
+    while (head != NULL)
+    {
+        if (nodesVisited.find(head) == nodesVisited.end())
+        {
+            // not found this node, we add it to the set
+            nodesVisited.insert(head);
+            head = head->next;
+        }
+        else
+        {
+            // the node is already visited - a loop
+            return true;
+        }
+    }
+    return false;  
 }
