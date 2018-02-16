@@ -19,7 +19,7 @@ vector<int> x, h;
 //left to right
 bool leftCheck()
 {
-    int maxReach = 0;
+    int maxReach = x[0];
     for (int i = 0; i < n; i++)
     {
         int currentReach = x[i] + h[i];
@@ -54,45 +54,17 @@ bool rightCheck()
     return true;
 }
 
-// bool leftIsDangerous(int i)
-// {    
-//     return x[i-1] + h[i-1] >= x[i];
-// }
-
-// bool rightIsDangerous(int i)
-// {
-//     return x[i+1] - h[i+1] <= x[i];
-// }
-
 void checkAll()
 {
     bool testLeft = leftCheck();
     bool testRight = rightCheck();
-        
-    // int i = 1;
-    // //left to right test - starts at the second element
-    // while (testLeft && i < n)
-    // {
-      
-    //     i++;
-    // }
-    // //cout << testLeft << endl;
-
-    // i = n-2; // start at penultimate element
-    // // right to left test
-    // while (testRight && i >= 0)
-    // {
-    //     testRight = rightCheck();
-    //     i--;
-    // }
-    // //cout << testRight << endl;
 
     if (testRight && testLeft)
         cout << "BOTH";
     else if (testRight)
-        cout << "LEFT";
-    else if (testLeft)
         cout << "RIGHT";
+    else if (testLeft)
+        cout << "LEFT";
     else
         cout << "NONE";
 
@@ -118,14 +90,7 @@ int main() {
         h.push_back(temp);
     }
 
-    //debug
-    // for (int i = 0; i < n; i++)
-    // {        
-    //     cout << x[i] << " : " << h[i] << endl;
-    // }
-
     checkAll();
-
 
     return 0;
 }
