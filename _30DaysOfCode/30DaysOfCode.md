@@ -25,4 +25,5 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 17 - More Exceptions
 - [x] Day 18 - Queues and Stacks
 - [x] Day 19 - Interfaces
-- [ ] Day 20 -
+- [x] Day 20 - Sorting
+- [ ] Day 21 - 
