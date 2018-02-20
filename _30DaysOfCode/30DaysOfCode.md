@@ -26,4 +26,4 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 18 - Queues and Stacks
 - [x] Day 19 - Interfaces
 - [x] Day 20 - Sorting
-- [ ] Day 21 - 
+- [x] Day 21 - Generics
