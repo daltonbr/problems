@@ -27,3 +27,4 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 19 - Interfaces
 - [x] Day 20 - Sorting
 - [x] Day 21 - Generics
+- [x] Day 22 - Binary Search Tree
