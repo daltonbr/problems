@@ -29,3 +29,5 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 21 - Generics
 - [x] Day 22 - Binary Search Tree
 - [x] Day 23 - BST - Level Order Traversal
+- [x] Day 24 - More Linked Lists
+- [ ] Day 25 - 
