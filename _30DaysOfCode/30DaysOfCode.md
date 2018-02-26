@@ -30,4 +30,8 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 22 - Binary Search Tree
 - [x] Day 23 - BST - Level Order Traversal
 - [x] Day 24 - More Linked Lists
-- [ ] Day 25 - 
+- [x] Day 25 - Running Time and Complexity
+- [ ] Day 26 - Nested Logic
+- [ ] Day 27 - Testing
+- [ ] Day 28 - RegEx, Patterns, and intro to Databases
+- [ ] Day 29 - Bitwise AND
