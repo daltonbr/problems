@@ -1,9 +1,10 @@
 # 30 Days of Code
 
-Although these daily challenges are fairly easy, they are a good review of basic concepts.
+Although some of these daily challenges are fairly easy, they are a good review of basic concepts.
 This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-code) from [HackerRank.com](www.hackerrank.com).
 
 ## Started January 30rd, 2018
+## Finished February 28th, 2018! Yay ✌️
 
 - [x] Day 0 - Hello, World
 - [x] Day 1 - Data Types  
@@ -34,4 +35,4 @@ This is a [challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-co
 - [x] Day 26 - Nested Logic
 - [x] Day 27 - Testing
 - [x] Day 28 - RegEx, Patterns, and intro to Databases
-- [ ] Day 29 - Bitwise AND
+- [x] Day 29 - Bitwise AND
