@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/contains-duplicate/description/
 public class Solution
 {
     public bool ContainsDuplicate(int[] nums)
