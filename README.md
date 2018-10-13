@@ -4,7 +4,7 @@ A repo for coding problems and **computational challenges** from several site li
 
 This is my playground to practice languages and exercise concepts!
 
-### [My HackerRank profile](https://www.hackerrank.com/daltonvarussa)
 ### [My LeetCode profile](https://leetcode.com/daltonvarussa/)
+### [My HackerRank profile](https://www.hackerrank.com/daltonvarussa)
 
 [30 Days of Code](./_30DaysOfCode/30DaysOfCode.md) challenge @HackerRank
